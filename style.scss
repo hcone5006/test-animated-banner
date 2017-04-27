@@ -114,33 +114,33 @@ h1, h2, h3, h4, h5, h6 {
             left: 20px;
             overflow: visible;
             animation: bee-in-animation 3s 1 ease-out; /* Slides the group in when ad starts */
-            li {
+            #bee {
                 width: 120px;
-                height: 120;
+                height: 120px;
                 background-image: url(./images/bumble-bee-body2.svg);
                 background-repeat: no-repeat;
                 background-size: 100px;
                 background-position: 50% 25%;
-                position: relative;
+                position: absolute;
                 top: 20px;
                 left: 0px;
                 overflow: visible;
                 animation: bee-animation 2s infinite ease-in-out; 
             }
+            #wings {
+                background-image: url(./images/wings2.svg);
+                background-repeat: no-repeat;
+                background-size: 60px;
+                width: 60px;
+                height: 60px;
+                position: absolute;
+                top: 18;
+                left: 5;;
+                transform: rotate(-30deg);
+                transform-origin: 100% 50%;        
+                animation: bee-wings-animation 0.3s infinite ease-in-out;
+            }
         }
-    }
-    #wings {
-        background-image: url(./images/wings2.svg);
-        background-repeat: no-repeat;
-        background-size: 60px;
-        width: 60px;
-        height: 60px;
-        position: absolute;
-        top: 18;
-        left: 5;;
-        transform: rotate(-30deg);
-        transform-origin: 100% 50%;        
-        animation: bee-wings-animation 0.3s infinite ease-in-out;
     }
     li {
         &#grass-back {

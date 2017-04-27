@@ -133,21 +133,21 @@ h1, h2, h3, h4, h5, h6 {
   /* Slides the group in when ad starts */
 }
 /* line 117, style.scss */
-#container ul#bumblebee li {
+#container ul#bumblebee #bee {
   width: 120px;
-  height: 120;
+  height: 120px;
   background-image: url(./images/bumble-bee-body2.svg);
   background-repeat: no-repeat;
   background-size: 100px;
   background-position: 50% 25%;
-  position: relative;
+  position: absolute;
   top: 20px;
   left: 0px;
   overflow: visible;
   animation: bee-animation 2s infinite ease-in-out;
 }
-/* line 132, style.scss */
-#container #wings {
+/* line 130, style.scss */
+#container ul#bumblebee #wings {
   background-image: url(./images/wings2.svg);
   background-repeat: no-repeat;
   background-size: 60px;
