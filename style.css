@@ -136,17 +136,15 @@ h1, h2, h3, h4, h5, h6 {
 #container ul#bumblebee #bee {
   width: 120px;
   height: 120px;
-  background-image: url(./images/bumble-bee-body2.svg);
+  background-image: url(./images/bee-body.svg);
   background-repeat: no-repeat;
   background-size: 100px;
-  background-position: 50% 25%;
   position: absolute;
   top: 20px;
   left: 0px;
-  overflow: visible;
   animation: bee-animation 2s infinite ease-in-out;
 }
-/* line 130, style.scss */
+/* line 144, style.scss */
 #container ul#bumblebee #wings {
   background-image: url(./images/wings2.svg);
   background-repeat: no-repeat;
@@ -160,7 +158,7 @@ h1, h2, h3, h4, h5, h6 {
   transform-origin: 100% 50%;
   animation: bee-wings-animation 0.3s infinite ease-in-out;
 }
-/* line 146, style.scss */
+/* line 160, style.scss */
 #container li#grass-back {
   width: 1200px;
   height: 74px;
@@ -173,7 +171,7 @@ h1, h2, h3, h4, h5, h6 {
   transform: skew(-10deg);
   animation: grass-back-animation 3s infinite ease-in-out;
 }
-/* line 158, style.scss */
+/* line 172, style.scss */
 #container li#grass-filler {
   width: 1200px;
   height: 84px;
@@ -187,7 +185,7 @@ h1, h2, h3, h4, h5, h6 {
   transform: skew(-5deg);
   animation: grass-filler-animation 4s infinite ease-in-out;
 }
-/* line 171, style.scss */
+/* line 185, style.scss */
 #container li#grass-filler2 {
   width: 1200px;
   height: 84px;
@@ -201,7 +199,7 @@ h1, h2, h3, h4, h5, h6 {
   transform: skew(0deg);
   animation: grass-front-animation 3s infinite ease-in-out;
 }
-/* line 184, style.scss */
+/* line 198, style.scss */
 #container li#grass-filler3 {
   width: 1200px;
   height: 80px;
@@ -214,7 +212,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 7px;
   animation: grass-front-animation 1s infinite ease-in-out;
 }
-/* line 196, style.scss */
+/* line 210, style.scss */
 #container li#grass-front {
   width: 1200px;
   height: 158px;
@@ -227,7 +225,7 @@ h1, h2, h3, h4, h5, h6 {
   left: -30px;
   animation: grass-front-animation 2s infinite ease-in-out;
 }
-/* line 208, style.scss */
+/* line 222, style.scss */
 #container li.grass-bottom {
   background-color: #a0cd4e;
   bottom: -45px;
@@ -237,7 +235,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 85px;
   width: 120%;
 }
-/* line 218, style.scss */
+/* line 232, style.scss */
 #container #clouds {
   position: absolute;
   top: 0px;
@@ -245,19 +243,19 @@ h1, h2, h3, h4, h5, h6 {
   animation: cloud-animation 30s infinite linear;
   /* Scrolls the clouds off to the left, resets, and repeats */
 }
-/* line 224, style.scss */
+/* line 238, style.scss */
 #container #cloud-group-1 {
   width: 720px;
   position: absolute;
   left: 0px;
 }
-/* line 229, style.scss */
+/* line 243, style.scss */
 #container #cloud-group-2 {
   width: 720px;
   position: absolute;
   left: 720px;
 }
-/* line 234, style.scss */
+/* line 248, style.scss */
 #container .cloud-1 {
   width: 172px;
   height: 121px;
@@ -266,7 +264,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 10px;
   left: 40px;
 }
-/* line 242, style.scss */
+/* line 256, style.scss */
 #container .cloud-2 {
   width: 121px;
   height: 75px;
@@ -275,7 +273,7 @@ h1, h2, h3, h4, h5, h6 {
   top: -25px;
   left: 300px;
 }
-/* line 250, style.scss */
+/* line 264, style.scss */
 #container .cloud-3 {
   width: 132px;
   height: 105px;
@@ -286,42 +284,42 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @keyframes delayed-fade-animation {
-  /* line 264, style.scss */
+  /* line 278, style.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 267, style.scss */
+  /* line 281, style.scss */
   80% {
     opacity: 0;
   }
 
-  /* line 270, style.scss */
+  /* line 284, style.scss */
   100% {
     opacity: 1;
   }
 }
 
 @keyframes form-animation {
-  /* line 277, style.scss */
+  /* line 291, style.scss */
   0% {
     opacity: 0;
     right: -400px;
   }
 
-  /* line 281, style.scss */
+  /* line 295, style.scss */
   90% {
     opacity: 0;
     right: -400px;
   }
 
-  /* line 285, style.scss */
+  /* line 299, style.scss */
   95% {
     opacity: 0.5;
     right: 20px;
   }
 
-  /* line 289, style.scss */
+  /* line 303, style.scss */
   100% {
     opacity: 1;
     right: 0px;
@@ -329,50 +327,50 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @keyframes cloud-animation {
-  /* line 297, style.scss */
+  /* line 311, style.scss */
   0% {
     left: 0px;
   }
 
-  /* line 300, style.scss */
+  /* line 314, style.scss */
   99.9999% {
     left: -720px;
   }
 
-  /* line 303, style.scss */
+  /* line 317, style.scss */
   100% {
     left: 0px;
   }
 }
 
 @keyframes bee-in-animation {
-  /* line 311, style.scss */
+  /* line 325, style.scss */
   0% {
     left: -200px;
   }
 
-  /* line 314, style.scss */
+  /* line 328, style.scss */
   100% {
     left: 20px;
   }
 }
 
 @keyframes bee-wings-animation {
-  /* line 321, style.scss */
+  /* line 335, style.scss */
   0% {
     -moz-transform: skew(10deg);
     -webkit-transform: skew(10deg);
     transform: skew(10deg);
   }
 
-  /* line 326, style.scss */
+  /* line 340, style.scss */
   50% {
     -moz-transform: skew(-10deg);
     -webkit-transform: skew(-10deg);
     transform: skew(-10deg);
   }
 
-  /* line 331, style.scss */
+  /* line 345, style.scss */
   100% {
     -moz-transform: skew(10deg);
     -webkit-transform: skew(10deg);
@@ -381,25 +379,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @keyframes bee-animation {
-  /* line 340, style.scss */
+  /* line 354, style.scss */
   0% {
     bottom: 0px;
     left: 0px;
   }
 
-  /* line 344, style.scss */
+  /* line 358, style.scss */
   25% {
     bottom: -2px;
     left: -2px;
   }
 
-  /* line 348, style.scss */
+  /* line 362, style.scss */
   70% {
     bottom: 2px;
     left: -4px;
   }
 
-  /* line 352, style.scss */
+  /* line 366, style.scss */
   100% {
     bottom: -1px;
     left: 0px;
@@ -407,28 +405,28 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @keyframes grass-back-animation {
-  /* line 360, style.scss */
+  /* line 374, style.scss */
   0% {
     -moz-transform: skew(-10deg);
     -webkit-transform: skew(-10deg);
     transform: skew(-10deg);
   }
 
-  /* line 366, style.scss */
+  /* line 380, style.scss */
   25% {
     -moz-transform: skew(-8deg);
     -webkit-transform: skew(-8deg);
     transform: skew(-8deg);
   }
 
-  /* line 372, style.scss */
+  /* line 386, style.scss */
   70% {
     -moz-transform: skew(-6deg);
     -webkit-transform: skew(-6deg);
     transform: skew(-6deg);
   }
 
-  /* line 378, style.scss */
+  /* line 392, style.scss */
   100% {
     -moz-transform: skew(-10deg);
     -webkit-transform: skew(-10deg);
@@ -437,28 +435,28 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @keyframes grass-filler-animation {
-  /* line 388, style.scss */
+  /* line 402, style.scss */
   0% {
     -moz-transform: skew(-5deg);
     -webkit-transform: skew(-5deg);
     transform: skew(-5deg);
   }
 
-  /* line 394, style.scss */
+  /* line 408, style.scss */
   25% {
     -moz-transform: skew(-10deg);
     -webkit-transform: skew(-10deg);
     transform: skew(-10deg);
   }
 
-  /* line 400, style.scss */
+  /* line 414, style.scss */
   70% {
     -moz-transform: skew(-15deg);
     -webkit-transform: skew(-15deg);
     transform: skew(-15deg);
   }
 
-  /* line 406, style.scss */
+  /* line 420, style.scss */
   100% {
     -moz-transform: skew(-6deg);
     -webkit-transform: skew(-6deg);
@@ -467,28 +465,28 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @keyframes grass-front-animation {
-  /* line 415, style.scss */
+  /* line 429, style.scss */
   0% {
     -moz-transform: skew(0deg);
     -webkit-transform: skew(0deg);
     transform: skew(0deg);
   }
 
-  /* line 421, style.scss */
+  /* line 435, style.scss */
   25% {
     -moz-transform: skew(2deg);
     -webkit-transform: skew(2deg);
     transform: skew(2deg);
   }
 
-  /* line 427, style.scss */
+  /* line 441, style.scss */
   70% {
     -moz-transform: skew(4deg);
     -webkit-transform: skew(4deg);
     transform: skew(4deg);
   }
 
-  /* line 433, style.scss */
+  /* line 447, style.scss */
   100% {
     -moz-transform: skew(0deg);
     -webkit-transform: skew(0deg);
