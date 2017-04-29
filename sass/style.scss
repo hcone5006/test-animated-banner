@@ -42,6 +42,8 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 40px;
         line-height: 40px;
         text-shadow: 0px 0px 4px #fff;
+        -webkit-backface-visibility: hidden;
+	    -webkit-transform: scale(1);
         animation: delayed-fade-animation 7s 1 ease-in-out; /* This will fade in our h2 with a simulated delay */
     }
     h3 {
@@ -50,12 +52,16 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 25px;
         line-height: 25px;
         text-shadow: 0px 0px 4px #fff;
+        -webkit-backface-visibility: hidden;
+	    -webkit-transform: scale(1);
         animation: delayed-fade-animation 10s 1 ease-in-out; /* This will fade in our h3 with a simulated delay */
     }
     form {
         width: 319;
         margin: 30px auto 0 auto;
         position: relative;
+        -webkit-backface-visibility: hidden;
+	    -webkit-transform: scale(1);
         animation: form-animation 12s 1 ease-in-out;  /* This will slide in our email address form with a cool elastic effect. This also has a simulated delay */
     }
     #email {
@@ -113,6 +119,8 @@ h1, h2, h3, h4, h5, h6 {
             bottom: 25px;
             left: 20px;
             overflow: visible;
+            -webkit-backface-visibility: hidden;
+	        -webkit-transform: scale(1);
             animation: bee-in-animation 3s 1 ease-out; /* Slides the group in when ad starts */
             #bee {
                 width: 120px;
@@ -120,24 +128,12 @@ h1, h2, h3, h4, h5, h6 {
                 background-image: url(./images/bee-body.png);
                 background-repeat: no-repeat;
                 background-size: 100px;
-                // background-position: 50% 25%;
                 position: absolute;
                 top: 20px;
                 left: 0px;
-                // overflow: visible;
+                -webkit-backface-visibility: hidden;
+	            -webkit-transform: scale(1);
                 animation: bee-animation 2s infinite ease-in-out; 
-                // Testing
-                // background-image: url(./images/wings2.svg);
-                // background-repeat: no-repeat;
-                // background-size: 60px;
-                // width: 60px;
-                // height: 60px;
-                // position: absolute;
-                // top: 18;
-                // left: 5;;
-                // transform: rotate(-30deg);
-                // transform-origin: 100% 50%;        
-                // animation: bee-wings-animation 0.3s infinite ease-in-out;
             }
             #wings {
                 background-image: url(./images/wings2.svg);
@@ -147,7 +143,10 @@ h1, h2, h3, h4, h5, h6 {
                 height: 60px;
                 position: absolute;
                 top: 18;
-                left: 5;;
+                left: 5;
+                -webkit-backface-visibility: hidden;
+                -moz-transform: rotate(-30deg);
+	            -webkit-transform: scale(1), rotate(-30deg);
                 transform: rotate(-30deg);
                 transform-origin: 100% 50%;        
                 animation: bee-wings-animation 0.3s infinite ease-in-out;
@@ -164,6 +163,9 @@ h1, h2, h3, h4, h5, h6 {
             z-index: 1;
             position: absolute;
             bottom: 10px;
+            -webkit-backface-visibility: hidden;
+            -moz-transform: skew(-10deg);
+	        -webkit-transform: scale(1), skew(-10deg);
             transform: skew(-10deg);
             animation: grass-back-animation 3s infinite ease-in-out; 
         }
@@ -177,6 +179,9 @@ h1, h2, h3, h4, h5, h6 {
             position: absolute;
             bottom: -12px;
             left: 10px;
+            -webkit-backface-visibility: hidden;
+            -moz-transform: skew(-5deg);
+	        -webkit-transform: scale(1), skew(-5deg);
             transform: skew(-5deg);
             animation: grass-filler-animation 4s infinite ease-in-out; 
         }
@@ -190,7 +195,8 @@ h1, h2, h3, h4, h5, h6 {
             position: absolute;
             bottom: -12px;
             left: 40px;
-            transform: skew(0deg);
+            -webkit-backface-visibility: hidden;
+            -webkit-transform: scale(1);
             animation: grass-front-animation 3s infinite ease-in-out; 
         }
         &#grass-filler3 {
@@ -203,6 +209,8 @@ h1, h2, h3, h4, h5, h6 {
             position: absolute;
             bottom: 0;
             left: 7px;
+            -webkit-backface-visibility: hidden;
+            -webkit-transform: scale(1);
             animation: grass-front-animation 1s infinite ease-in-out; 
         }
         &#grass-front {
@@ -215,6 +223,8 @@ h1, h2, h3, h4, h5, h6 {
             position: absolute;
             bottom: -70px;
             left:-30px;
+            -webkit-backface-visibility: hidden;
+            -webkit-transform: scale(1);
             animation: grass-front-animation 2s infinite ease-in-out; 
         }
         &.grass-bottom {
@@ -231,6 +241,8 @@ h1, h2, h3, h4, h5, h6 {
         position: absolute;
         top: 0px;
         z-index: 0;
+        -webkit-backface-visibility: hidden;
+        -webkit-transform: scale(1);
         animation: cloud-animation 30s infinite linear; /* Scrolls the clouds off to the left, resets, and repeats */
     }
     #cloud-group-1 {

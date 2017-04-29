@@ -1,0 +1,521 @@
+/* line 2, style.scss */
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 7, style.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+/* line 12, style.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 18, style.scss */
+#container {
+  width: 720px;
+  height: 300px;
+  float: left;
+  margin: 40px auto 0;
+  background-image: url(./images/sky2.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 0px 6px #000;
+}
+/* line 30, style.scss */
+#container #content {
+  width: 425px;
+  float: right;
+  margin: 40px;
+  text-align: center;
+  z-index: 4;
+  position: relative;
+  overflow: visible;
+}
+/* line 39, style.scss */
+#container h2 {
+  font-family: 'Alfa Slab One', cursive;
+  color: #FF9B71;
+  font-size: 40px;
+  line-height: 40px;
+  text-shadow: 0px 0px 4px #fff;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: scale(1);
+  animation: delayed-fade-animation 7s 1 ease-in-out;
+  /* This will fade in our h2 with a simulated delay */
+}
+/* line 49, style.scss */
+#container h3 {
+  font-family: 'Boogaloo', cursive;
+  color: #444;
+  font-size: 25px;
+  line-height: 25px;
+  text-shadow: 0px 0px 4px #fff;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: scale(1);
+  animation: delayed-fade-animation 10s 1 ease-in-out;
+  /* This will fade in our h3 with a simulated delay */
+}
+/* line 59, style.scss */
+#container form {
+  width: 319;
+  margin: 30px auto 0 auto;
+  position: relative;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: scale(1);
+  animation: form-animation 12s 1 ease-in-out;
+  /* This will slide in our email address form with a cool elastic effect. This also has a simulated delay */
+}
+/* line 67, style.scss */
+#container #email {
+  width: 158px;
+  height: 50px;
+  float: left;
+  padding: 0 20px;
+  font-size: 16px;
+  font-family: 'Lucida Grande', sans-serif;
+  color: #fff;
+  text-shadow: 1px 1px 0px #ff773d;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: 1px solid #ff773d;
+  outline: none;
+  box-shadow: -1px -1px 1px white;
+  background-color: #FF9B71;
+  background-image: linear-gradient(bottom, #ff9b71 0%, #ff773d 100%);
+}
+/* line 83, style.scss */
+#container #email:focus {
+  background-image: -webkit-linear-gradient(bottom, #ffbb9e 0%, #ffa985 100%);
+  background-image: -moz-linear-gradient(bottom, #ffbb9e 0%, #ffa985 100%);
+  background-image: -o-linear-gradient(bottom, #ffbb9e 0%, #ffa985 100%);
+  background-image: linear-gradient(to top, #ffbb9e 0%, #ffa985 100%);
+}
+/* line 90, style.scss */
+#container #submit {
+  height: 50px;
+  float: left;
+  cursor: pointer;
+  padding: 0 20px;
+  font-size: 20px;
+  font-family: 'Boogaloo', cursive;
+  color: #ff773d;
+  text-shadow: 1px 1px 0px #fff;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 1px solid #ff773d;
+  border-left: none;
+  background-color: #fff;
+  background-image: linear-gradient(bottom, #f5f7f9 0%, #ffffff 100%);
+}
+/* line 105, style.scss */
+#container #submit:hover {
+  background-image: -webkit-linear-gradient(bottom, white 0%, white 100%);
+  background-image: -moz-linear-gradient(bottom, white 0%, white 100%);
+  background-image: -o-linear-gradient(bottom, white 0%, white 100%);
+  background-image: linear-gradient(to top, #ffffff 0%, #ffffff 100%);
+}
+/* line 112, style.scss */
+#container ul {
+  list-style: none;
+}
+/* line 114, style.scss */
+#container ul#bumblebee {
+  width: 249px;
+  height: 215px;
+  z-index: 2;
+  position: absolute;
+  bottom: 25px;
+  left: 20px;
+  overflow: visible;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: scale(1);
+  animation: bee-in-animation 3s 1 ease-out;
+  /* Slides the group in when ad starts */
+}
+/* line 125, style.scss */
+#container ul#bumblebee #bee {
+  width: 120px;
+  height: 120px;
+  background-image: url(./images/bee-body.png);
+  background-repeat: no-repeat;
+  background-size: 100px;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: scale(1);
+  animation: bee-animation 2s infinite ease-in-out;
+}
+/* line 138, style.scss */
+#container ul#bumblebee #wings {
+  background-image: url(./images/wings2.svg);
+  background-repeat: no-repeat;
+  background-size: 60px;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 18;
+  left: 5;
+  -webkit-backface-visibility: hidden;
+  -moz-transform: rotate(-30deg);
+  -webkit-transform: scale(1), rotate(-30deg);
+  transform: rotate(-30deg);
+  transform-origin: 100% 50%;
+  animation: bee-wings-animation 0.3s infinite ease-in-out;
+}
+/* line 157, style.scss */
+#container li#grass-back {
+  width: 1200px;
+  height: 74px;
+  background-image: url(./images/left-grass.png);
+  background-repeat: repeat-x;
+  background-size: 40px 55px;
+  z-index: 1;
+  position: absolute;
+  bottom: 10px;
+  -webkit-backface-visibility: hidden;
+  -moz-transform: skew(-10deg);
+  -webkit-transform: scale(1), skew(-10deg);
+  transform: skew(-10deg);
+  animation: grass-back-animation 3s infinite ease-in-out;
+}
+/* line 172, style.scss */
+#container li#grass-filler {
+  width: 1200px;
+  height: 84px;
+  background-image: url(./images/left-grass.png);
+  background-repeat: repeat-x;
+  background-size: 30px 65px;
+  z-index: 1;
+  position: absolute;
+  bottom: -12px;
+  left: 10px;
+  -webkit-backface-visibility: hidden;
+  -moz-transform: skew(-5deg);
+  -webkit-transform: scale(1), skew(-5deg);
+  transform: skew(-5deg);
+  animation: grass-filler-animation 4s infinite ease-in-out;
+}
+/* line 188, style.scss */
+#container li#grass-filler2 {
+  width: 1200px;
+  height: 84px;
+  background-image: url(./images/left-grass.png);
+  background-repeat: repeat-x;
+  background-size: 30px 60px;
+  z-index: 1;
+  position: absolute;
+  bottom: -12px;
+  left: 40px;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: scale(1);
+  animation: grass-front-animation 3s infinite ease-in-out;
+}
+/* line 202, style.scss */
+#container li#grass-filler3 {
+  width: 1200px;
+  height: 80px;
+  background-image: url(./images/left-grass.png);
+  background-repeat: repeat-x;
+  background-size: 50px 70px;
+  z-index: 3;
+  position: absolute;
+  bottom: 0;
+  left: 7px;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: scale(1);
+  animation: grass-front-animation 1s infinite ease-in-out;
+}
+/* line 216, style.scss */
+#container li#grass-front {
+  width: 1200px;
+  height: 158px;
+  background-image: url(./images/left-grass.png);
+  background-repeat: repeat-x;
+  background-size: 50px;
+  z-index: 3;
+  position: absolute;
+  bottom: -70px;
+  left: -30px;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: scale(1);
+  animation: grass-front-animation 2s infinite ease-in-out;
+}
+/* line 230, style.scss */
+#container li.grass-bottom {
+  background-color: #a0cd4e;
+  bottom: -45px;
+  left: -80px;
+  position: absolute;
+  z-index: 3;
+  height: 85px;
+  width: 120%;
+}
+/* line 240, style.scss */
+#container #clouds {
+  position: absolute;
+  top: 0px;
+  z-index: 0;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: scale(1);
+  animation: cloud-animation 30s infinite linear;
+  /* Scrolls the clouds off to the left, resets, and repeats */
+}
+/* line 248, style.scss */
+#container #cloud-group-1 {
+  width: 720px;
+  position: absolute;
+  left: 0px;
+}
+/* line 253, style.scss */
+#container #cloud-group-2 {
+  width: 720px;
+  position: absolute;
+  left: 720px;
+}
+/* line 258, style.scss */
+#container .cloud-1 {
+  width: 172px;
+  height: 121px;
+  background-image: url(./images/cloud-1.png);
+  position: absolute;
+  top: 10px;
+  left: 40px;
+}
+/* line 266, style.scss */
+#container .cloud-2 {
+  width: 121px;
+  height: 75px;
+  background-image: url(./images/cloud-2.png);
+  position: absolute;
+  top: -25px;
+  left: 300px;
+}
+/* line 274, style.scss */
+#container .cloud-3 {
+  width: 132px;
+  height: 105px;
+  background-image: url(./images/cloud-3.png);
+  position: absolute;
+  top: -5px;
+  left: 530px;
+}
+
+@keyframes delayed-fade-animation {
+  /* line 288, style.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 291, style.scss */
+  80% {
+    opacity: 0;
+  }
+
+  /* line 294, style.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes form-animation {
+  /* line 301, style.scss */
+  0% {
+    opacity: 0;
+    right: -400px;
+  }
+
+  /* line 305, style.scss */
+  90% {
+    opacity: 0;
+    right: -400px;
+  }
+
+  /* line 309, style.scss */
+  95% {
+    opacity: 0.5;
+    right: 20px;
+  }
+
+  /* line 313, style.scss */
+  100% {
+    opacity: 1;
+    right: 0px;
+  }
+}
+
+@keyframes cloud-animation {
+  /* line 321, style.scss */
+  0% {
+    left: 0px;
+  }
+
+  /* line 324, style.scss */
+  99.9999% {
+    left: -720px;
+  }
+
+  /* line 327, style.scss */
+  100% {
+    left: 0px;
+  }
+}
+
+@keyframes bee-in-animation {
+  /* line 335, style.scss */
+  0% {
+    left: -200px;
+  }
+
+  /* line 338, style.scss */
+  100% {
+    left: 20px;
+  }
+}
+
+@keyframes bee-wings-animation {
+  /* line 345, style.scss */
+  0% {
+    -moz-transform: skew(10deg);
+    -webkit-transform: skew(10deg);
+    transform: skew(10deg);
+  }
+
+  /* line 350, style.scss */
+  50% {
+    -moz-transform: skew(-10deg);
+    -webkit-transform: skew(-10deg);
+    transform: skew(-10deg);
+  }
+
+  /* line 355, style.scss */
+  100% {
+    -moz-transform: skew(10deg);
+    -webkit-transform: skew(10deg);
+    transform: skew(10deg);
+  }
+}
+
+@keyframes bee-animation {
+  /* line 364, style.scss */
+  0% {
+    bottom: 0px;
+    left: 0px;
+  }
+
+  /* line 368, style.scss */
+  25% {
+    bottom: -2px;
+    left: -2px;
+  }
+
+  /* line 372, style.scss */
+  70% {
+    bottom: 2px;
+    left: -4px;
+  }
+
+  /* line 376, style.scss */
+  100% {
+    bottom: -1px;
+    left: 0px;
+  }
+}
+
+@keyframes grass-back-animation {
+  /* line 384, style.scss */
+  0% {
+    -moz-transform: skew(-10deg);
+    -webkit-transform: skew(-10deg);
+    transform: skew(-10deg);
+  }
+
+  /* line 390, style.scss */
+  25% {
+    -moz-transform: skew(-8deg);
+    -webkit-transform: skew(-8deg);
+    transform: skew(-8deg);
+  }
+
+  /* line 396, style.scss */
+  70% {
+    -moz-transform: skew(-6deg);
+    -webkit-transform: skew(-6deg);
+    transform: skew(-6deg);
+  }
+
+  /* line 402, style.scss */
+  100% {
+    -moz-transform: skew(-10deg);
+    -webkit-transform: skew(-10deg);
+    transform: skew(-10deg);
+  }
+}
+
+@keyframes grass-filler-animation {
+  /* line 412, style.scss */
+  0% {
+    -moz-transform: skew(-5deg);
+    -webkit-transform: skew(-5deg);
+    transform: skew(-5deg);
+  }
+
+  /* line 418, style.scss */
+  25% {
+    -moz-transform: skew(-10deg);
+    -webkit-transform: skew(-10deg);
+    transform: skew(-10deg);
+  }
+
+  /* line 424, style.scss */
+  70% {
+    -moz-transform: skew(-15deg);
+    -webkit-transform: skew(-15deg);
+    transform: skew(-15deg);
+  }
+
+  /* line 430, style.scss */
+  100% {
+    -moz-transform: skew(-6deg);
+    -webkit-transform: skew(-6deg);
+    transform: skew(-6deg);
+  }
+}
+
+@keyframes grass-front-animation {
+  /* line 439, style.scss */
+  0% {
+    -moz-transform: skew(0deg);
+    -webkit-transform: skew(0deg);
+    transform: skew(0deg);
+  }
+
+  /* line 445, style.scss */
+  25% {
+    -moz-transform: skew(2deg);
+    -webkit-transform: skew(2deg);
+    transform: skew(2deg);
+  }
+
+  /* line 451, style.scss */
+  70% {
+    -moz-transform: skew(4deg);
+    -webkit-transform: skew(4deg);
+    transform: skew(4deg);
+  }
+
+  /* line 457, style.scss */
+  100% {
+    -moz-transform: skew(0deg);
+    -webkit-transform: skew(0deg);
+    transform: skew(0deg);
+  }
+}
